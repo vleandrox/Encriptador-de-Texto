@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/7a4a004923.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="assets/Logo.png" alt="Encryptador" class="logo">
+        <h1 class="title">Encryptador</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <div class="textarea-container1">
+                    <textarea placeholder="Ingresa el texto aqui...." id="texto-encriptador"
+                        oninput="validarTexto()"></textarea>
+                    <div class="buttons">
+                        <button class="btn-encriptar" onclick="encryptar();"  id="encryptBtn">Cifrar</button>
+                        <button class="btn-desencriptar" onclick="desencriptar();">Desencriptar</button>
+                    </div>
+                </div>
+                <div class="textarea-container2">
+                    <img src="assets/search.png" alt="Lupa" id="lupa">
+                    <textarea id="texto-encriptado">
+                        
+                    </textarea>
+                    
+                    <div class="buttons">
+                        <button class="btn-copiar" onclick="copiarTexto();" id="copyBtn">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Victor Alarcón Torres</p> 
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/victor-alarc%C3%B3n-torres-480047198/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/vleandrox" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/victor.alarcon.54" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
